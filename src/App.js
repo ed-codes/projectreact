@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Job from './components/job';
+import Searchbar from './components/search'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Searchbar /> 
+      <Job title="Interaction designer (UI/UX)" location="Sweden"/>
+      <Job title="React Front-end Developer" location="USA"/>
+      <Job title="Node Express Backend Developer" location="UK"/>
     </div>
-  );
+  )
 }
 
 export default App;

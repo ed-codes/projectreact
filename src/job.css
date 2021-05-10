@@ -1,0 +1,16 @@
+.job {
+  border: 1px solid #F2E2DA; 
+  margin-bottom: 24px;
+  text-align: left;
+  padding: 24px;
+}
+
+.job__title {
+  margin-top: 0;
+}
+
+.job__company-name,
+.job__location {
+  display: inline-block;
+  margin-right: 10px; 
+}
